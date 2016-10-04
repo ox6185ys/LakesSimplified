@@ -23,28 +23,13 @@ public class LakeManager {
         como.addLakeTime(28.14);
         listOfLakes.add(como);
 
-        /*ArrayList listOfTimesCalhoun = new ArrayList();
-        listOfTimesCalhoun.add(43.32);
-        listOfTimesCalhoun.add(45.15);
-        mapOfTimes.put("Calhoun", listOfTimesCalhoun);*/
-/*
-        ArrayList listOfTimesHarriet = new ArrayList();
-        listOfTimesHarriet.add(49.34);
-        listOfTimesHarriet.add(44.43);
-        listOfTimesHarriet.add(46.22);
-        mapOfTimes.put("Harriet",listOfTimesHarriet);
-
-        ArrayList listOfTimesComo = new ArrayList();
-        listOfTimesComo.add(32.11);
-        listOfTimesComo.add(28.14);
-        mapOfTimes.put("Como", listOfTimesComo);*/
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("What's the name of the lake? ");
         String inputLake = scanner.next();//Lake Name.
         System.out.println("What was your running time? ");
         Double inputLakeTime = scanner.nextDouble();//Running time.
-
+//incomplete
         boolean doesContainLake = mapOfTimes.containsKey(inputLake);
         if (!doesContainLake) {
             ArrayList listOfTimes = new ArrayList();
